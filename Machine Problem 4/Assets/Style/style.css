@@ -1,0 +1,135 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #000000;
+}
+
+.cal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: Helvetica;
+	font-weight: bold;
+}
+
+.calculator {
+	background-color: #1c1c1c;
+	width: 100%;
+	max-width: 375px;
+	min-height: 640px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 1.5rem;
+	overflow: hidden;
+	box-shadow: 0px -2px 16px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+	min-height: 200px;
+	padding: 1.5rem;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	color: rgb(255, 255, 255);
+	text-align: right;
+	flex: 1 1 0%;
+
+	
+}
+
+.display .content {
+	display: block;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	max-width: 100%;
+	overflow: auto;
+	
+}
+
+.display .input {
+	width: 100%;
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.display .output {
+	font-size: 3rem;
+	font-weight: 700;
+	width: 100%;
+	white-space: nowrap;
+	color: #FFF;
+}
+
+.display .operator {
+	color: #ffffff;
+}
+
+.display .brackets,
+.display .percent {
+	color: #ffffff;
+}
+
+.keys {
+	background-color: #1c1c1c;
+	padding: 1.5rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-gap: 1rem;
+}
+
+.keys .key {
+	position: relative;
+	cursor: pointer;
+
+	display: block;
+	height: 0;
+	padding-top: 100%;
+	
+	border-radius: 2rem;
+	transition: 0.2s;
+	user-select: none;
+}
+
+.keys .key span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	font-size: 2rem;
+	font-weight: 700;
+	color: #FFF;
+}
+
+.keys .key:hover {
+	box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.keys .key.operator span {
+	color: #ffffff;
+}
+
+.keys .key.action span {
+	color: black;
+}
+
+#zero{
+	grid-column: 1 / span 2;
+	padding: 34.5px;
+	background-color: #505050;
+}
+#grey{
+	background-color: #d4d4d2;
+}
+
+#orange{
+	background-color: #ff9500;
+}
+
+#numbers{
+	background-color: #505050;
+}

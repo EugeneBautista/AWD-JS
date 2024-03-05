@@ -1,0 +1,748 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    min-height: auto;
+    padding-left: 20%;
+    background-image: url('https://media1.tenor.com/m/0EDznml5BDAAAAAC/cat-spinning.gif');
+    background-size: 2200px;
+    
+}
+
+.container{
+    position: relative;
+    display: flex;
+    width: 50%;
+    box-shadow: 2px 2px 1px 1px black;
+    background-color: rgb(78, 164, 235);
+    padding: 5%;
+    margin: 10%;
+    opacity: 95%;
+    
+}
+
+.left{
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.right{
+    padding: 0;
+}
+
+button {
+    display: block;
+    font-size: 15px;
+    padding: 12px 40px;
+    border-radius: 2px;
+    border: 2px dimgrey #000;
+    width: 170px;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: all .2s ease-in-out; 
+    font-weight: 700;
+    box-shadow: 2px 2px black;
+}
+
+button:hover{
+    transform: scale(1.1); 
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.monday{
+    background-color: purple; 
+}
+
+.tuesday{
+    background-color: pink; 
+}
+
+.wednesday{
+    background-color: blue; 
+}
+
+.thursday{
+    background-color: green; 
+}
+
+.friday{
+    background-color: yellow; 
+}
+
+.saturday{
+    background-color: orange; 
+}
+
+.sunday{
+    background-color: red; 
+}
+
+.mon-down{
+    position: absolute;
+    animation: mon-appear 2s ease-in-out;
+    animation-timing-function: linear;
+    top: 200px;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://media.tenor.com/rxj5dQaK2wQAAAAM/cat-tired.gif');
+    border: 10px solid purple; 
+    box-shadow: 2px 2px 2px black;
+}
+
+.tue-down{
+    position: absolute;
+    animation: tue-appear 2s ease-in-out;
+    animation-timing-function: linear;
+    top: 200px;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://media1.tenor.com/m/oTeBa4EVepMAAAAC/business-cat-working.gif');
+    border: 10px solid pink; 
+    box-shadow: 2px 2px 2px black;
+}
+
+.wed-down{
+    position: absolute;
+    animation: wed-appear 2s ease-in-out;
+    animation-timing-function: linear;
+    top: 200px;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://i.pinimg.com/originals/6c/90/28/6c90288d7e10d46d18895f17f420a92c.gif');
+    border: 10px solid blue; 
+    box-shadow: 2px 2px 2px black;
+}
+
+.thu-down{
+    position: absolute;
+    animation: thu-appear 2s ease-in-out;
+    animation-timing-function: linear;
+    top: 200px;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://media0.giphy.com/media/3o7WTJ0yHFA2GzOA2k/giphy.gif?cid=6c09b952i3pyqvvcpyzj25xf94rz6qx10odgeekl0fkzmvtx&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+    border: 10px solid green; 
+    box-shadow: 2px 2px 2px black;
+}
+
+.fri-down{
+    position: absolute;
+    animation: fri-appear 2s ease-in-out;
+    animation-timing-function: linear;
+    top: 200px;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://i.pinimg.com/originals/84/f4/8b/84f48b00b3d967a5fa940509fd08c497.gif');
+    border: 10px solid yellow; 
+    box-shadow: 2px 2px 2px black;
+}
+
+.sat-down{
+    position: absolute;
+    animation: sat-appear 2s ease-in-out;
+    animation-timing-function: linear;
+    top: 200px;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://i.pinimg.com/originals/44/d9/54/44d954130fe5b62d68b2b63e7917f8ba.gif');
+    border: 10px solid orangered; 
+    box-shadow: 2px 2px 2px black;
+}
+
+.sun-down{
+    position: absolute;
+    animation: sun-appear 2s ease-in-out;
+    animation-timing-function: linear;
+    top: 200px;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://media.tenor.com/Hs_e_ooz0aIAAAAM/sad-cat-sad-cat-drinking-wine-disco.gif');
+    border: 10px solid red; 
+    box-shadow: 2px 2px 2px black;
+    
+}
+
+.mon-up{
+    position: absolute;
+    animation: mon-hide 2s ease-in-out;
+    animation-timing-function: linear;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://media.tenor.com/rxj5dQaK2wQAAAAM/cat-tired.gif');
+    border: 10px solid purple; 
+    top: -1000px;
+}
+
+.tue-up{
+    position: absolute;
+    animation: tue-hide 2s ease-in-out;
+    animation-timing-function: linear;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://media1.tenor.com/m/oTeBa4EVepMAAAAC/business-cat-working.gif');
+    border: 10px solid pink; 
+    top: -1000px;
+}
+
+.wed-up{
+    position: absolute;
+    animation: wed-hide 2s ease-in-out;
+    animation-timing-function: linear;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://i.pinimg.com/originals/6c/90/28/6c90288d7e10d46d18895f17f420a92c.gif');
+    border: 10px solid blue; 
+    top: -1000px;
+}
+
+.thu-up{
+    position: absolute;
+    animation: thu-hide 2s ease-in-out;
+    animation-timing-function: linear;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://media0.giphy.com/media/3o7WTJ0yHFA2GzOA2k/giphy.gif?cid=6c09b952i3pyqvvcpyzj25xf94rz6qx10odgeekl0fkzmvtx&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+    border: 10px solid green; 
+    top: -1000px;
+}
+
+.fri-up{
+    position: absolute;
+    animation: fri-hide 2s ease-in-out;
+    animation-timing-function: linear;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://i.pinimg.com/originals/84/f4/8b/84f48b00b3d967a5fa940509fd08c497.gif');
+    border: 10px solid yellow; 
+    top: -1000px;
+}
+
+.sat-up{
+    position: absolute;
+    animation: sat-hide 2s ease-in-out;
+    animation-timing-function: linear;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://i.pinimg.com/originals/44/d9/54/44d954130fe5b62d68b2b63e7917f8ba.gif');
+    border: 10px solid orange; 
+    top: -1000px;
+}
+
+.sun-up{
+    position: absolute;
+    animation: sun-hide 2s ease-in-out;
+    animation-timing-function: linear;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://media.tenor.com/Hs_e_ooz0aIAAAAM/sad-cat-sad-cat-drinking-wine-disco.gif');
+    border: 10px solid red; 
+    top: -1000px;
+}
+
+@keyframes mon-appear{
+    0%{
+        top: -360px;
+        background-color: purple;
+        opacity: 0%;
+    }
+    50%{
+        top: 80px;
+        background-color: purple;
+        opacity: 50%;
+    }
+    100%{
+        top: 200px;
+        background-color: white;
+
+    }
+}
+@keyframes tue-appear{
+    0%{
+        top: -360px;
+        background-color: pink;
+        opacity: 0%;
+    }
+    50%{
+        top: 80px;
+        background-color: pink;
+        opacity: 50%;
+    }
+    100%{
+        top: 200px;
+        background-color: white;
+
+    }
+}
+@keyframes wed-appear{
+    0%{
+        top: -360px;
+        background-color: blue;
+        opacity: 0%;
+    }
+    50%{
+        top: 80px;
+        background-color: blue;
+        opacity: 50%;
+    }
+    100%{
+        top: 200px;
+        background-color: white;
+
+    }
+}
+@keyframes thu-appear{
+    0%{
+        top: -360px;
+        background-color: green;
+        opacity: 0%;
+    }
+    50%{
+        top: 80px;
+        background-color: green;
+        opacity: 50%;
+    }
+    100%{
+        top: 200px;
+        background-color: white;
+
+    }
+}
+@keyframes fri-appear{
+    0%{
+        top: -360px;
+        background-color: yellow;
+        opacity: 0%;
+    }
+    50%{
+        top: 80px;
+        background-color: yellow;
+        opacity: 50%;
+    }
+    100%{
+        top: 200px;
+        background-color: white;
+
+    }
+}
+@keyframes sat-appear{
+    0%{
+        top: -360px;
+        background-color: orangered;
+        opacity: 0%;
+    }
+    50%{
+        top: 80px;
+        background-color: orangered;
+        opacity: 50%;
+    }
+    100%{
+        top: 200px;
+        background-color: white;
+
+    }
+}
+@keyframes sun-appear{
+    0%{
+        top: -360px;
+        background-color: red;
+        opacity: 0%;
+    }
+    50%{
+        top: 80px;
+        background-color: red;
+        opacity: 50%;
+    }
+    100%{
+        top: 200px;
+        background-color: white;
+
+    }
+}
+@keyframes mon-hide {
+    0%{
+        top: 200px;
+        background-color: white;
+    }
+    50%{
+        bottom: 80px;
+        background-color: purple;
+        opacity: 50%;
+    }
+    100%{
+        top: -360px;
+        background-color: purple;
+        opacity: 0%;
+    }
+  }
+  @keyframes tue-hide {
+    0%{
+        top: 200px;
+        background-color: white;
+    }
+    50%{
+        bottom: 80px;
+        background-color: pink;
+        opacity: 50%;
+    }
+    100%{
+        top: -360px;
+        background-color: pink;
+        opacity: 0%;
+    }
+  }
+  @keyframes wed-hide {
+    0%{
+        top: 200px;
+        background-color: white;
+    }
+    50%{
+        bottom: 80px;
+        background-color: blue;
+        opacity: 50%;
+    }
+    100%{
+        top: -360px;
+        background-color: blue;
+        opacity: 0%;
+    }
+  }
+  @keyframes thu-hide {
+    0%{
+        top: 200px;
+        background-color: white;
+    }
+    50%{
+        bottom: 80px;
+        background-color: green;
+        opacity: 50%;
+    }
+    100%{
+        top: -360px;
+        background-color: green;
+        opacity: 0%;
+    }
+  }
+  @keyframes fri-hide {
+    0%{
+        top: 200px;
+        background-color: white;
+    }
+    50%{
+        bottom: 80px;
+        background-color: yellow;
+        opacity: 50%;
+    }
+    100%{
+        top: -360px;
+        background-color: yellow;
+        opacity: 0%;
+    }
+  }
+  @keyframes sat-hide {
+    0%{
+        top: 200px;
+        background-color: white;
+    }
+    50%{
+        bottom: 80px;
+        background-color: orange;
+        opacity: 50%;
+    }
+    100%{
+        top: -360px;
+        background-color: orange;
+        opacity: 0%;
+    }
+  }
+  @keyframes sun-hide {
+    0%{
+        top: 200px;
+        background-color: white;
+    }
+    50%{
+        bottom: 80px;
+        background-color: red;
+        opacity: 50%;
+    }
+    100%{
+        top: -360px;
+        background-color: red;
+        opacity: 0%;
+    }
+  }
+
+  @media (min-width: 750px) and (max-width: 1000px){
+
+    .container{
+        margin: 10%;
+        padding-left: 5%;
+        width: 60%;
+    }
+
+    .mon-down{
+        position: absolute;
+        animation: sun-appear 2s ease-in-out;
+        animation-timing-function: linear;
+        top: 100px;
+    }
+    
+    .tue-down{
+        position: absolute;
+        animation: sun-appear 2s ease-in-out;
+        animation-timing-function: linear;
+        top: 100px;
+    }
+    
+    .wed-down{
+        position: absolute;
+        animation: sun-appear 2s ease-in-out;
+        animation-timing-function: linear;
+        top: 100px;
+    }
+    
+    .thu-down{
+        position: absolute;
+        animation: sun-appear 2s ease-in-out;
+        animation-timing-function: linear;
+        top: 100px;
+    }
+    
+    .fri-down{
+        position: absolute;
+        animation: sun-appear 2s ease-in-out;
+        animation-timing-function: linear;
+        top: 100px;
+    }
+    
+    .sat-down{
+        position: absolute;
+        animation: sun-appear 2s ease-in-out;
+        animation-timing-function: linear;
+        top: 100px;
+    }
+    
+    .sun-down{
+        position: absolute;
+        animation: sun-appear 2s ease-in-out;
+        animation-timing-function: linear;
+        top: 100px;
+    }
+
+    @keyframes mon-appear{
+        0%{
+            top: -360px;
+            background-color: rgb(255, 255, 255);
+            opacity: 0%;
+        }
+        50%{
+            top: 80px;
+            background-color: purple;
+            opacity: 50%;
+        }
+        100%{
+            top: 100px;
+            background-color: white;
+        }
+    }
+    @keyframes tue-appear{
+        0%{
+            top: -360px;
+            background-color: pink;
+            opacity: 0%;
+        }
+        50%{
+            top: 80px;
+            background-color: pink;
+            opacity: 50%;
+        }
+        100%{
+            top: 100px;
+            background-color: white;
+        }
+    }
+    @keyframes wed-appear{
+        0%{
+            top: -360px;
+            background-color: blue;
+            opacity: 0%;
+        }
+        50%{
+            top: 80px;
+            background-color: blue;
+            opacity: 50%;
+        }
+        100%{
+            top: 100px;
+            background-color: white;
+        }
+    }
+    @keyframes thu-appear{
+        0%{
+            top: -360px;
+            background-color: green;
+            opacity: 0%;
+        }
+        50%{
+            top: 80px;
+            background-color: green;
+            opacity: 50%;
+        }
+        100%{
+            top: 100px;
+            background-color: white;
+        }
+    }
+    @keyframes fri-appear{
+        0%{
+            top: -360px;
+            background-color: yellow;
+            opacity: 0%;
+        }
+        50%{
+            top: 80px;
+            background-color: yellow;
+            opacity: 50%;
+        }
+        100%{
+            top: 100px;
+            background-color: white;
+        }
+    }
+    @keyframes sat-appear{
+        0%{
+            top: -360px;
+            background-color: orangered;
+            opacity: 0%;
+        }
+        50%{
+            top: 80px;
+            background-color: orangered;
+            opacity: 50%;
+        }
+        100%{
+            top: 100px;
+            background-color: white;
+        }
+    }
+    @keyframes sun-appear{
+        0%{
+            top: -360px;
+            background-color: red;
+            opacity: 0%;
+        }
+        50%{
+            top: 80px;
+            background-color: red;
+            opacity: 50%;
+        }
+        100%{
+            top: 100px;
+            background-color: white;
+        }
+    }
+    @keyframes mon-hide {
+        0%{
+            top: 100px;
+            background-color: white;
+        }
+        50%{
+            bottom: 80px;
+            background-color: purple;
+            opacity: 50%;
+        }
+        100%{
+            top: -360px;
+            background-color: purple;
+            opacity: 0%;
+        }
+      }
+      @keyframes tue-hide {
+        0%{
+            top: 100px;
+            background-color: white;
+        }
+        50%{
+            bottom: 80px;
+            background-color: pink;
+            opacity: 50%;
+        }
+        100%{
+            top: -360px;
+            background-color: pink;
+            opacity: 0%;
+        }
+      }
+      @keyframes wed-hide {
+        0%{
+            top: 100px;
+            background-color: white;
+        }
+      }
+      @keyframes thu-hide {
+        0%{
+            top: 100px;
+            background-color: white;
+        }
+        50%{
+            bottom: 80px;
+            background-color: green;
+            opacity: 50%;
+        }
+        100%{
+            top: -360px;
+            background-color: green;
+            opacity: 0%;
+        }
+      }
+      @keyframes fri-hide {
+        0%{
+            top: 100px;
+            background-color: white;
+        }
+        50%{
+            bottom: 80px;
+            background-color: yellow;
+            opacity: 50%;
+        }
+        100%{
+            top: -360px;
+            background-color: yellow;
+            opacity: 0%;
+        }
+      }
+      @keyframes sat-hide {
+        0%{
+            top: 100px;
+            background-color: white;
+        }
+        50%{
+            bottom: 80px;
+            background-color: orange;
+            opacity: 50%;
+        }
+        100%{
+            top: -360px;
+            background-color: orange;
+            opacity: 0%;
+        }
+      }
+      @keyframes sun-hide {
+        0%{
+            top: 100px;
+            background-color: white;
+        }
+        50%{
+            bottom: 80px;
+            background-color: red;
+            opacity: 50%;
+        }
+        100%{
+            top: -360px;
+            background-color: red;
+            opacity: 0%;
+        }
+    }
+  }
